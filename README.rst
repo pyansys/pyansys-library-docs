@@ -36,16 +36,19 @@ Install ``openapi-common`` with:
 
 Usage
 ~~~~~
-The package exposes several classes, including a client ``ApiClient`` and a builder
-``ApiClientFactory``, these allow a client library to configure a connection to an API.
+The package exposes several classes, including a client :py:class:`~ansys.openapi.common.ApiClient` and a
+builder :py:class:`~ansys.openapi.common.ApiClientFactory`, these allow a client
+library to configure a connection to an API.
 
 The API client class is intended to be wrapped by code that implements a client library.
-We suggest that you override the ``__init__()`` or ``connect()`` methods to add any
-additional behavior that might be required.
+We suggest that you override the :py:meth:`~ansys.openapi.common.ApiClient.__init__()`
+or :py:meth:`~ansys.openapi.common.ApiClient.connect()` methods to add any additional
+behavior that might be required.
 
-Authentication is configured through the ``ApiClientFactory`` object and its ``with_xxx()``
-methods. If no authentication is required, you can use the ``with_anonymous()`` method.
-You can provide additional configuration with the ``SessionConfiguration`` object.
+Authentication is configured through the :py:class:`~ansys.openapi.common.ApiClientFactory`
+object and its ``with_xxx()`` methods. If no authentication is required, you can use the
+:py:meth:``~ansys.openapi.common.ApiClient.with_anonymous()` method. You can provide
+additional configuration with the :py:class:`~ansys.openapi.common.SessionConfiguration` object.
 
 .. code:: python
 
