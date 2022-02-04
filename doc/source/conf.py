@@ -6,6 +6,7 @@ from pyansys_sphinx_theme import pyansys_logo_black
 project = 'pyansys.shared'
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = 'ANSYS Inc.'
+html_title = f"Shared Components"
 
 release = version = '0.61.2'
 
