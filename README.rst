@@ -1,5 +1,5 @@
 PyAnsys Shared Components
-========================
+=========================
 
 As part of the PyAnsys project to enable the usage of Ansys
 products through Python we have created shared components
