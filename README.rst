@@ -47,7 +47,7 @@ behavior that might be required.
 
 Authentication is configured through the :py:class:`~ansys.openapi.common.ApiClientFactory`
 object and its ``with_xxx()`` methods. If no authentication is required, you can use the
-:py:meth:``~ansys.openapi.common.ApiClient.with_anonymous()` method. You can provide
+:py:meth:`~ansys.openapi.common.ApiClient.with_anonymous()` method. You can provide
 additional configuration with the :py:class:`~ansys.openapi.common.SessionConfiguration` object.
 
 .. code:: python
