@@ -21,8 +21,12 @@ html_theme_options = {
     "additional_breadcrumbs": [("PyAnsys Documentation", "https://docs.pyansys.com")]
 }
 
+intersphinx_mapping = {
+    'openapi-common': ('https://openapi.docs.pyansys.com/', None)
+}
+
 # Sphinx extensions
-extensions = []
+extensions = ["sphinx.ext.intersphinx"]
 
 # The suffix(es) of source filenames.
 source_suffix = '.rst'
