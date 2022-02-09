@@ -40,15 +40,15 @@ The package exposes several classes, including a client :py:class:`~ansys.openap
 builder :py:class:`~ansys.openapi.common.ApiClientFactory`, these allow a client
 library to configure a connection to an API.
 
-The API client class is intended to be wrapped by code that implements a client library.
-We suggest that you override the :py:meth:`~ansys.openapi.common.ApiClient.__init__()`
-or :py:meth:`~ansys.openapi.common.ApiClient.connect()` methods to add any additional
-behavior that might be required.
+The :py:class:`~ansys.openapi.common.ApiClient` class is intended to be wrapped by code that implements 
+a client library.
 
 Authentication is configured through the :py:class:`~ansys.openapi.common.ApiClientFactory`
-object and its ``with_xxx()`` methods. If no authentication is required, you can use the
-:py:meth:`~ansys.openapi.common.ApiClient.with_anonymous()` method. You can provide
-additional configuration with the :py:class:`~ansys.openapi.common.SessionConfiguration` object.
+object and its :py:meth:`~ansys.openapi.common.ApiClientFactory.with_credentials`,
+:py:meth:`~ansys.openapi.common.ApiClientFactory.with_autologon`, and 
+:py:meth:`~ansys.openapi.common.ApiClientFactory.with_oidc` methods. If no authentication 
+is required, you can use the :py:meth:`~ansys.openapi.common.ApiClientFactory.with_anonymous` method.
+You can provide additional configuration with the :py:class:`~ansys.openapi.common.SessionConfiguration` object.
 
 .. code:: python
 
