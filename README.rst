@@ -63,6 +63,6 @@ Resources and Links
 For more details, see:
 
   - `OpenAPI-Common Documentation <https://openapi.docs.pyansys.com/>`_
-  - `OpenAPI-Common PyPi <https://pypi.org/project/ansys-openapi-common/>`_
+  - `OpenAPI-Common PyPI <https://pypi.org/project/ansys-openapi-common/>`_
   - `OpenAPI-Common GitHub <https://github.com/pyansys/openapi-common/>`_
 
