@@ -8,7 +8,7 @@ copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
 author = 'ANSYS Inc.'
 html_title = f"PyAnsys Shared Components"
 
-release = version = '0.61.2'
+release = version = '1.1.0'
 
 # use the default pyansys logo
 html_logo = pyansys_logo_black
