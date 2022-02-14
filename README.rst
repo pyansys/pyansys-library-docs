@@ -7,35 +7,38 @@ that are reusable across the different packages.
 
 These shared components are not interfaces to specific products nor
 single-purpose tools. They are libraries to facilitate code-sharing
-within the project.
+within the PyAnsys project.
 
-This is an expanding and developing project. Feel free
-to post issues on the various GitHub pages in this document.
-For additional support, contact `PyAnsys Support
+These are expanding and developing libraries. Feel free
+to post issues on the various GitHub pages referenced at the
+end of this document. For additional support, contact `PyAnsys Support
 <mailto:pyansys.support@ansys.com>`_, who will correctly route
-your requests.
+your requests to the appropriate development teams.
 
-PyAnsys Shared Components
--------------------------
-The ``pyansys-library-docs`` repository provides the source code for
-libraries that faciliate code-sharing with the PyAnsys project.
+OpenAPI Common Library
+----------------------
+The ``openapi-common`` repository provides the source code for
+authentication-aware clients for OpenAPI client libraries.
 
-The PyAnsys Shared Components library is intended for use with the custom code generation
-template in the `PyAnsys project <https://github.com/pyansys>`_. 
+The PyAnsys Open API Common library is intended for use with the custom code
+generation template in the `PyAnsys project <https://github.com/pyansys>`_.
+This library currently supports authentication with Basic, Negotiate, NTLM,
+and OpenID Connect. Most features of the underlying requests session are
+exposed for use. Some basic configuration is also provided by default. 
 
 Installation
 ~~~~~~~~~~~~
 
-Install ``pyansys-library-docs`` with:
+Install ``openapi-common`` with:
 
 .. code::
 
-   pip install pyansys-library-docs
+   pip install ansys-openapi-common
 
 Usage
 ~~~~~
 The package exposes several classes, including a client :py:class:`~ansys.openapi.common.ApiClient` and a
-builder :py:class:`~ansys.openapi.common.ApiClientFactory`, these allow a client
+builder :py:class:`~ansys.openapi.common.ApiClientFactory` that allow a client
 library to configure a connection to an API.
 
 The :py:class:`~ansys.openapi.common.ApiClient` class is intended to be wrapped by code that implements 
@@ -58,7 +61,7 @@ You can provide additional configuration with the :py:class:`~ansys.openapi.comm
    
 Resources and Links
 ~~~~~~~~~~~~~~~~~~~
-For more details, see:
+For more information, see:
 
   - `OpenAPI-Common Documentation <https://openapi.docs.pyansys.com/>`_
   - `OpenAPI-Common PyPI <https://pypi.org/project/ansys-openapi-common/>`_
