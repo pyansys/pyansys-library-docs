@@ -20,19 +20,23 @@ Install ``openapi-common`` with:
 
 Usage
 ~~~~~
-The package exposes several classes, including a client :py:class:`~ansys.openapi.common.ApiClient` and a
-builder :py:class:`~ansys.openapi.common.ApiClientFactory` that allow a client
-library to configure a connection to an API.
+The package exposes several classes, including a client
+:py:class:`~ansys.openapi.common.ApiClient` and a builder
+:py:class:`~ansys.openapi.common.ApiClientFactory` that allow a client library
+to configure a connection to an API.
 
-The :py:class:`~ansys.openapi.common.ApiClient` class is intended to be wrapped by code that implements
-a client library.
+The :py:class:`~ansys.openapi.common.ApiClient` class is intended to be wrapped
+by code that implements a client library.
 
-Authentication is configured through the :py:class:`~ansys.openapi.common.ApiClientFactory`
-object and its :py:meth:`~ansys.openapi.common.ApiClientFactory.with_credentials`,
+Authentication is configured through the
+:py:class:`~ansys.openapi.common.ApiClientFactory` object and its
+:py:meth:`~ansys.openapi.common.ApiClientFactory.with_credentials`,
 :py:meth:`~ansys.openapi.common.ApiClientFactory.with_autologon`, and
-:py:meth:`~ansys.openapi.common.ApiClientFactory.with_oidc` methods. If no authentication
-is required, you can use the :py:meth:`~ansys.openapi.common.ApiClientFactory.with_anonymous` method.
-You can provide additional configuration with the :py:class:`~ansys.openapi.common.SessionConfiguration` object.
+:py:meth:`~ansys.openapi.common.ApiClientFactory.with_oidc` methods. If no
+authentication is required, you can use the
+:py:meth:`~ansys.openapi.common.ApiClientFactory.with_anonymous` method. You can
+provide additional configuration with the
+:py:class:`~ansys.openapi.common.SessionConfiguration` object.
 
 .. code:: python
 
