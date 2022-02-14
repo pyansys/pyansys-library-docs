@@ -8,4 +8,4 @@
    Simply reuse the README.rst to avoid duplication
 
 .. include:: ../../README.rst
-
+.. include:: openapi.rst
