@@ -2,28 +2,29 @@ PyAnsys Shared Components
 =========================
 
 As part of the PyAnsys project to enable the usage of Ansys
-products through Python we have created shared components
-that we intend to be reusable across the different packages.
+products through Python, we have created shared components
+that are reusable across the different packages.
 
-These are not interfaces to specific products, nor single-purpose
-tools, but libraries to facilitate code-sharing within the project.
+These shared components are not interfaces to specific products nor
+single-purpose tools. They are libraries to facilitate code-sharing
+within the PyAnsys project.
 
-This is an expanding and developing project. Feel free
-to post issues on the various GitHub pages in this document.
-For additional support, contact the `PyAnsys Support
-<mailto:pyansys.support@ansys.com>`_ and your requests will be
-routed correctly.
+These are expanding and developing libraries. Feel free
+to post issues on the various GitHub pages referenced at the
+end of this document. For additional support, contact `PyAnsys Support
+<mailto:pyansys.support@ansys.com>`_, who will correctly route
+your requests to the appropriate development teams.
 
-OpenAPI-Common
---------------
-The ``openapi-common`` repository provides the source code for authentication-aware
-client for OpenAPI client libraries.
+OpenAPI Common Library
+----------------------
+The ``openapi-common`` repository provides the source code for
+authentication-aware clients for OpenAPI client libraries.
 
-The PyAnsys OpenAPI Common library is intended for use with the custom code generation
-template in the `PyAnsys project <https://github.com/pyansys>`_. This library currently
-supports authentication with Basic, Negotiate, NTLM, and OpenID Connect. Most features
-of the underlying requests session are exposed for use. Some basic configuration is also
-provided by default.
+The PyAnsys Open API Common library is intended for use with the custom code
+generation template in the `PyAnsys project <https://github.com/pyansys>`_.
+This library currently supports authentication with Basic, Negotiate, NTLM,
+and OpenID Connect. Most features of the underlying requests session are
+exposed for use. Some basic configuration is also provided by default. 
 
 Installation
 ~~~~~~~~~~~~
@@ -37,7 +38,7 @@ Install ``openapi-common`` with:
 Usage
 ~~~~~
 The package exposes several classes, including a client :py:class:`~ansys.openapi.common.ApiClient` and a
-builder :py:class:`~ansys.openapi.common.ApiClientFactory`, these allow a client
+builder :py:class:`~ansys.openapi.common.ApiClientFactory` that allow a client
 library to configure a connection to an API.
 
 The :py:class:`~ansys.openapi.common.ApiClient` class is intended to be wrapped by code that implements 
@@ -60,7 +61,7 @@ You can provide additional configuration with the :py:class:`~ansys.openapi.comm
    
 Resources and Links
 ~~~~~~~~~~~~~~~~~~~
-For more details, see:
+For more information, see:
 
   - `OpenAPI-Common Documentation <https://openapi.docs.pyansys.com/>`_
   - `OpenAPI-Common PyPI <https://pypi.org/project/ansys-openapi-common/>`_
