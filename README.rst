@@ -2,37 +2,35 @@ PyAnsys Shared Components
 =========================
 
 As part of the PyAnsys project to enable the usage of Ansys
-products through Python we have created shared components
-that we intend to be reusable across the different packages.
+products through Python, we have created shared components
+that are reusable across the different packages.
 
-These are not interfaces to specific products, nor single-purpose
-tools, but libraries to facilitate code-sharing within the project.
+These shared components are not interfaces to specific products nor
+single-purpose tools. They are libraries to facilitate code-sharing
+within the project.
 
 This is an expanding and developing project. Feel free
 to post issues on the various GitHub pages in this document.
-For additional support, contact the `PyAnsys Support
-<mailto:pyansys.support@ansys.com>`_ and your requests will be
-routed correctly.
+For additional support, contact `PyAnsys Support
+<mailto:pyansys.support@ansys.com>`_, who will correctly route
+your requests.
 
-OpenAPI-Common
---------------
-The ``openapi-common`` repository provides the source code for authentication-aware
-client for OpenAPI client libraries.
+PyAnsys Shared Components
+-------------------------
+The ``pyansys-library-docs`` repository provides the source code for
+libraries that faciliate code-sharing with the PyAnsys project.
 
-The PyAnsys OpenAPI Common library is intended for use with the custom code generation
-template in the `PyAnsys project <https://github.com/pyansys>`_. This library currently
-supports authentication with Basic, Negotiate, NTLM, and OpenID Connect. Most features
-of the underlying requests session are exposed for use. Some basic configuration is also
-provided by default.
+The PyAnsys Shared Components library is intended for use with the custom code generation
+template in the `PyAnsys project <https://github.com/pyansys>`_. 
 
 Installation
 ~~~~~~~~~~~~
 
-Install ``openapi-common`` with:
+Install ``pyansys-library-docs`` with:
 
 .. code::
 
-   pip install ansys-openapi-common
+   pip install pyansys-library-docs
 
 Usage
 ~~~~~
